@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Changes made since creation of plans
+
+log in system was removed as I felt it was not necessary.
+
+recipes were added to the entry for each food item.
+
+menu, ingredients list and recipes are now on the same page.
