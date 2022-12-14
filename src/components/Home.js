@@ -1,13 +1,18 @@
 import React from "react";
+import pizza from '../assets/pizza.mp4'
 import "../index.css"
 
 const Home = () => {
   return (
-    <>
-      <h1>Home</h1>
+    <div className='mainVid'>
       
-      <p> Check out this message from our menu creator</p>
-      <p> Probably would usually also have a banner image or carousel or similar</p>
-</>
+      <h1>Lab 3 Recipes</h1>
+      
+      <p className = "him"> Get back in the lab, its time to cook!</p>
+
+      <video src={pizza} autoPlay loop muted />
+</div>
 ); };
 export default Home;
+
+// comment

@@ -7,7 +7,8 @@ function Search({ details }) {
   const [searchField, setSearchField] = useState("");
   const [filterOil, setFilterOil] = useState(false);
   const [filterFlour, setFilterFlour] = useState(false);
-  const [filterButter, setFilterButter] = useState(false);
+  const [filterDairy, setFilterDairy] = useState(false);
+  const [filterVege, setFilterVege] = useState(false);
   const [displayData, setDisplayData] = useState("");
   const [displayMenu, setDisplayMenu] = useState([]);
   const [displayItem, setDisplayItem] = useState([]);
@@ -27,15 +28,21 @@ function Search({ details }) {
     })
 
   }
-  const butterData = (data) => {
+  const dairyData = (data) => {
     return data.filter((entry) => {
-      return entry.ingredients.some((item) => { return item.ingredientName.includes("butter") })
+      return entry.ingredients.some((item) => { return item.type.includes("dairy") })
     })
 
   }
+  const vegeData = (data) => {
+    return data.filter((entry) => {
+      return entry.category.includes(("vegetarian") )
+    })
+  }
+  
   useEffect(() => {
     //so close but yet so far
-    if (!filterOil && !filterFlour && !filterButter) {
+    if (!filterOil && !filterFlour && !filterDairy && !filterVege) {
       setDisplayData(filtered)
 
     }
@@ -47,12 +54,15 @@ function Search({ details }) {
       if (filterOil) {
         result = oilData(result)
       }
-      if (filterButter) {
-        result = butterData(result)
+      if (filterDairy) {
+        result = dairyData(result)
+      }
+      if (filterVege) {
+        result = vegeData(result)
       }
       setDisplayData(result)
     }
-  }, [filtered, filterOil, filterFlour, filterButter])
+  }, [filtered, filterOil, filterFlour, filterDairy, filterVege])
   return (
 
     <div>
@@ -62,16 +72,20 @@ function Search({ details }) {
         placeholder="Search ..."
         onChange={(e) => setSearchField(e.target.value)}
       /> </div>
+     <p className = "filterP">Filter by Allergens</p> 
       <div className="oilCheck"> <label> Oil </label> <input type="checkbox" value={filterOil} onClick={() => setFilterOil(!filterOil)}
 
       /></div>
       <div className="oilCheck"> <label> Flour </label> <input type="checkbox" value={filterFlour} onClick={() => setFilterFlour(!filterFlour)}
 
       /></div>
+      <div className="oilCheck"> <label> Vegetarian </label> <input type="checkbox" value={filterVege} onClick={() => setFilterVege(!filterVege)}
 
-      <div className="oilCheck"> <label> Butter </label> <input type="checkbox" value={filterButter} onClick={() => setFilterButter(!filterButter)}
+/></div>
 
-      /></div>
+       <div className="oilCheck"> <label> Dairy </label> <input type="checkbox" value={filterDairy} onClick={() => setFilterDairy(!filterDairy)}
+
+/></div>
 
       <div id="displayThis">
 

@@ -15,15 +15,17 @@ const Review = ({ food }) => {
 
 
             <Accordion.Body>
-                <input type="number" min={0} max={5} value={reviewText} onChange={(e) => setReviewText(e.target.value)}>
+                <span class = "input-wrapper">
+                <input class= "inputReview" type="number" min={0} max={5} value={reviewText} onChange={(e) => setReviewText(e.target.value)}>
                 </input>
-                <button onClick={() => handleClick()} disabled={reviewText === 0}> Add Review </button>
+                </span>
+                <button class="button" onClick={() => handleClick()} disabled={reviewText === 0}> Add Review </button>
 
             </Accordion.Body>
             
         </div>
 
     );
-    console.log(food.review)
+    
 };
 export default Review;

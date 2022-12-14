@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Accordion from 'react-bootstrap/Accordion';
-import FetchNutrition from "./FetchNutrition";
+import FetchData from "./FetchNutrition";
 import Review from "./Review";
 import "../index.css"
+
 const FoodItem = ({ food }) => {
+  const [nutrition, setnutrition] = useState(false);
   return (
     <div>
 
@@ -22,8 +24,8 @@ const FoodItem = ({ food }) => {
           return <p> {item.ingredientName} {item.quantity} {item.measurement} </p>
         })}
 
-
-        <p><FetchNutrition query={food.name} /></p>
+<button class="button" onClick={() => setnutrition(!nutrition)}> Fetch Nutrition  </button>
+ {nutrition && <FetchData query = {food.name} />}    
         <p><Review food={food} /></p>
         {food.review.map((item) => {
 

@@ -6,7 +6,7 @@ const Locations = () => {
     <div className= "locations">
       <h1>Locations</h1>
       
-      <p> Brdige of Weir</p>
+      <p> Bridge of Weir</p>
       <p> East Kilbride</p>
       <p>Kilmarnock</p>
       <p>South Shields</p>
