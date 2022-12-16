@@ -12,8 +12,9 @@ link to deployed application:
 
 https://fewd-coursework.herokuapp.com
 
+first step is to
 
-
+cd lab3
 
 # Getting Started with Create React App
 
