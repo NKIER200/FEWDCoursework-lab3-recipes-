@@ -8,8 +8,9 @@ const AboutUs = () => {
       <h1>About Lab 3</h1>
       
       <p className = "him"> A leader in the industry of recipes</p>
-      <p className = "him"> created by Nathan Kier</p>
-      <video src={Alan} autoPlay loop muted />
+      <p className = "him"> Created by Nathan Kier</p>
+      <p className = "him" > Below, a word from our founder, Alan</p>
+      <video className= "mainVid2" src={Alan} controls muted />
 </div>
 ); };
 export default AboutUs;
