@@ -90,3 +90,5 @@ FetchNutrition, defys belief and reason by requesting the API 1.5k (one thousand
 underneath the nutritional info, there is a number input and a button in order to submit a review for the recipe. multiple numerical reviews can be made.
 
 Finally, below the review area, there are two buttons. One to add to a menu, and one to add to an ingredients list.
+
+to clear from the ingredients list and menu simply click the home button and navigate back to the menu page.
