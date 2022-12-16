@@ -1,3 +1,7 @@
+link to deployed application:
+
+https://fewd-coursework.herokuapp.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -81,11 +85,13 @@ menu, ingredients list and recipes are now on the same page.
 
 The home page features a simple looping video of a pizza base having sauce applied to it. The navigation bar allows for acces to "Menu", About Us" and "Locations" from the "Home" page.
 
+The About Us page features a video of my Dad, again.
+
 navigate from the home page to 'menu' to view the recipes. click the arrow to open the accordion.
 
 this will allow you to see the category, the bio of the food item, the price of the food item, the recipe, a button, that when pressed calls the nutritional data.
 
-FetchNutrition, defys belief and reason by requesting the API 1.5k (one thousand and five hundred) times in less than ten minutes. There is no loop causing this. could be a mac issue.
+FetchNutrition, defys belief and reason by requesting the API 1.5k (one thousand and five hundred) times in less than ten minutes. There is no loop causing this. could be a mac issue. This calms down significantly when being deployed through Heroku. roughly one request in 5 seconds initially down to 1 in 30-40 when all items have been fetched.
 
 underneath the nutritional info, there is a number input and a button in order to submit a review for the recipe. multiple numerical reviews can be made.
 
