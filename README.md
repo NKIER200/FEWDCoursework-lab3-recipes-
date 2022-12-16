@@ -92,3 +92,7 @@ underneath the nutritional info, there is a number input and a button in order t
 Finally, below the review area, there are two buttons. One to add to a menu, and one to add to an ingredients list.
 
 to clear from the ingredients list and menu simply click the home button and navigate back to the menu page.
+
+link to deployed application:
+
+https://fewd-coursework.herokuapp.com
