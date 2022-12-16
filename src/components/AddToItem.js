@@ -7,21 +7,22 @@ const AddToItem = ({ food }) => {
     <div>
       {/* what is happening */}
 
-      <Accordion.Header> <div className ="centerThis"> {food.name}</div></Accordion.Header>
+      <Accordion.Header> <div className="centerThis"> {food.name}</div></Accordion.Header>
       <div>
-      <Accordion.Body>
-      
-        {food.ingredients.map((item)=>{
-          
-         return <p> {item.ingredientName} {item.quantity} {item.measurement} </p>
-        })}
-         
+        <Accordion.Body>
 
-        
-        
-       
-      </Accordion.Body>
+          {food.ingredients.map((item) => {
+
+            return <p> {item.ingredientName} {item.quantity} {item.measurement} </p>
+          })}
+
+
+
+
+
+        </Accordion.Body>
       </div>
-</div>
-); };
+    </div>
+  );
+};
 export default AddToItem;

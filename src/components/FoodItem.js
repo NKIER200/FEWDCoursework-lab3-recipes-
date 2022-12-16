@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import FetchData from "./FetchNutrition";
 import Review from "./Review";
@@ -24,13 +24,9 @@ const FoodItem = ({ food }) => {
           return <p> {item.ingredientName} {item.quantity} {item.measurement} </p>
         })}
 
-<button class="button" onClick={() => setnutrition(!nutrition)}> Fetch Nutrition  </button>
- {nutrition && <FetchData query = {food.name} />}    
-        <p><Review food={food} /></p>
-        {food.review.map((item) => {
+        <button class="button" onClick={() => setnutrition(!nutrition)}> Fetch Nutrition  </button>
+        {nutrition && <FetchData query={food.name} />}
 
-return <p className="displayReview">{item}</p>
-})}
 
       </Accordion.Body>
 
