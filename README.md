@@ -1,6 +1,19 @@
+Nathan Alan Kier
+
+S1906771
+
+FEWD Coursework One
+
+
+
+
+
 link to deployed application:
 
 https://fewd-coursework.herokuapp.com
+
+
+
 
 # Getting Started with Create React App
 
