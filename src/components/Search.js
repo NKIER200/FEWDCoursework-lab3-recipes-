@@ -14,8 +14,10 @@ function Search({ details }) {
   const [displayItem, setDisplayItem] = useState([]);
 
   const filtered = details.filter((entry) => {
-    return entry.name.toLowerCase().includes(searchField.toLowerCase()) || (entry.category.toLowerCase().includes(searchField.toLowerCase())) || (entry.price.toLowerCase().includes(searchField.toLowerCase()));
+    return  entry.name.toLowerCase().includes(searchField.toLowerCase()) || (entry.category.toLowerCase().includes(searchField.toLowerCase())) || (entry.price.toLowerCase().includes(searchField.toLowerCase()));
   });
+ 
+   
   const oilData = (data) => {
     return data.filter((entry) => {
       return entry.ingredients.some((item) => { return item.ingredientName.includes("olive oil") })

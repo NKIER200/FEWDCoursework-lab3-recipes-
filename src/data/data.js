@@ -20,7 +20,7 @@ export const items = [
         { "ingredientName": "banana shallot", "quantity": 1, "measurement": "whole", "type": "fruit" },
         { "ingredientName": "corriander chopped", "quantity": 1, "measurement": "whole", "type": "herb" },
         { "ingredientName": "pomegranate", "quantity": 10, "measurement": "seeds", "type": "fruit" }],
-        "available": "yes",
+        "available": "no",
         "review": [],
         "_id": "AeEPtzfuv1YAjIRZ"
     },

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Accordion from 'react-bootstrap/Accordion';
 import FetchData from "./FetchNutrition";
-import Review from "./Review";
 import "../index.css"
 
 const FoodItem = ({ food }) => {
@@ -9,7 +8,7 @@ const FoodItem = ({ food }) => {
   return (
     <div>
 
-      <Accordion.Header>  {food.name}</Accordion.Header>
+      <Accordion.Header> {food.name}</Accordion.Header>
 
       <Accordion.Body>
         <p>{food.category}</p>

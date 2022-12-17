@@ -7,13 +7,17 @@ import Review from "./Review";
 const DisplayFoodItems = (params) => {
 
   const foodList = params.foodList
+  
+   
 
 
   return (
 
     <Accordion>
+      
 
       {foodList.map((food, index) => {
+        
         return (
 
           <Accordion.Item eventKey={index} key={index}>
