@@ -91,9 +91,9 @@ function Search({ details }) {
 
       <div id="displayThis">
 
-        {displayData && <div className="displayItemnuts">Recipes <DisplayFoodItems foodList={displayData} menu={displayMenu} setDisplayMenu={setDisplayMenu} item={displayItem} setDisplayItem={setDisplayItem} /></div>}
-        {displayMenu.length > 0 && <div className="displayItemnuts"> Menu <DisplayMenuAndItem foodList={displayMenu} /></div>}
-        {displayItem.length > 0 && <div className="displayItemnuts"> Ingredients List <DisplayItemz foodList={displayItem} /></div>}
+        {displayData && <div className="displayItemx">Recipes <DisplayFoodItems foodList={displayData} menu={displayMenu} setDisplayMenu={setDisplayMenu} item={displayItem} setDisplayItem={setDisplayItem} /></div>}
+        {displayMenu.length > 0 && <div className="displayItemx"> Menu <DisplayMenuAndItem foodList={displayMenu} /></div>}
+        {displayItem.length > 0 && <div className="displayItemx"> Ingredients List <DisplayItemz foodList={displayItem} /></div>}
       </div>
     </div>
 

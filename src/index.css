@@ -62,7 +62,7 @@ nav a {
 }
 
 
-.containmynuts {
+.containMP {
   color: black;
   background-color: #494e58 !important;
   width: 100% !important;
@@ -140,7 +140,7 @@ nav a {
 }
 
 /* 
-#displayThis >.displayItemnuts {
+#displayThis >.displayItemx {
   flex:1 !important;
   width: 33vw !important;
   margin-left: 1rem ;
@@ -148,7 +148,7 @@ nav a {
   
   
 } */
-.displayItemnuts {
+.displayItemx {
   flex: 1 !important;
   color: antiquewhite;
   flex-direction: column !important;

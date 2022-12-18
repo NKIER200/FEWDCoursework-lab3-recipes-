@@ -5,7 +5,7 @@ import "../index.css"
 import { items } from "../data/data";
 function Menupage() {
   return (
-    <div className="containmynuts">
+    <div className="containMP">
       <h1>Menu</h1>
       <Search details={items}/>
       </div>
